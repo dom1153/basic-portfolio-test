@@ -1,0 +1,8 @@
+Note for building parcel (for distribution)
+    Parcel will by default reroute paths to use the absolute server toot by default
+    e.g. ./style.css -> /style.css
+      This means if you want to serve the files before uploading, you need to test within the root folder itself.
+      Also means that serving the directory above (like where this file is)
+
+    "build:dist": "parcel build index.html --public-url ./dist/",
+      You can change the 'relative' path a build argument.
