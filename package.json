@@ -5,11 +5,14 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "serve": "parcel src/index.pug",
-    "clean": "rm -f dist/*",
-    "build": "parcel build src/index.pug --public-url ./",
+    "serve": "yarn clean && parcel src/index.pug",
+    "clean": "rm -rf .cache dist",
+    "build": "yarn clean && parcel build --public-url ./ src/index.pug",
     "typecheck": "tsc index.ts --noEmit"
   },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
   "devDependencies": {
     "cssnano": "^4.1.10",
     "pug": "^3.0.0",

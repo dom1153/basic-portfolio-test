@@ -12,3 +12,7 @@ For instructions on how to upload to github pages, see here:
   long story short:
 	git add dist && git commit -m "Initial dist subtree commit"
 	git subtree push --prefix dist origin gh-pages
+
+Notes for debugging building dist version for the web:
+  css broken? make sure tailwind css is purching the correct html/pug files
+  use --public-url ./ to make sure it's not setting default dir as root /
