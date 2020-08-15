@@ -1,10 +1,10 @@
 doctype html
 html
   include templates/head.pug
-  body
+  body.bg-gray-900
     include templates/nav.pug
-    section.text-gray-500.bg-gray-900.body-font
-      .container.px-5.py-10.mx-auto
+    section.text-gray-500.body-font
+      .container.px-5.mx-auto(class="md:py-5 lg:py-10")
         .relative
           img.gallery-block(alt='gallery' src='./images/xps-unsplash.jpg')
           span.caption-body
