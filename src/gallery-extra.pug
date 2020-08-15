@@ -1,0 +1,43 @@
+doctype html
+html
+  include templates/head.pug
+  body
+    include templates/nav.pug
+    section.text-gray-500.bg-gray-900.body-font
+      .container.px-5.py-10.mx-auto
+        .relative
+          img.gallery-block(alt='gallery' src='./images/xps-unsplash.jpg')
+          span.caption-body
+            | Photo by 
+            a.caption-url(href='https://unsplash.com/@xps?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') XPS
+            |  on 
+            a.caption-url(href='https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Unsplash
+        .relative
+          img.gallery-block(alt='gallery' src='./images/hana-bae-unsplash.jpg')
+          span.caption-body
+            | Photo by 
+            a.caption-url(href='https://unsplash.com/@hanabae?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Hana Bae
+            |  on 
+            a.caption-url(href='https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Unsplash
+        .relative
+          img.gallery-block(alt='gallery' src='./images/teacora-rooibos-unsplash.jpg')
+          span.caption-body
+            | Photo by 
+            a.caption-url(href='https://unsplash.com/@teacora?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') TeaCora Rooibos
+            |  on 
+            a.caption-url(href='https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Unsplash
+        .relative
+          img.gallery-block(alt='gallery' src='./images/linda-holman-unsplash.jpg')
+          span.caption-body
+            | Photo by 
+            a.caption-url(href='https://unsplash.com/@me4short?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Linda Holman
+            |  on 
+            a.caption-url(href='https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Unsplash
+        .relative
+          img.gallery-block(alt='gallery' src='./images/eric-lee-unsplash.jpg')
+          span.caption-body
+            | Photo by 
+            a.caption-url(href='https://unsplash.com/@erc_lee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Eric Lee
+            |  on 
+            a.caption-url(href='https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Unsplash
+    include templates/footer.pug

@@ -9,3 +9,6 @@ Note for building parcel (for distribution)
 
 For instructions on how to upload to github pages, see here:
   https://gist.github.com/cobyism/4730490
+  long story short:
+	git add dist && git commit -m "Initial dist subtree commit"
+	git subtree push --prefix dist origin gh-pages

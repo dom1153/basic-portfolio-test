@@ -1,0 +1,15 @@
+doctype html
+html
+  include templates/head.pug
+  body
+    include templates/nav.pug
+    section.text-gray-500.bg-gray-900.body-font.overflow-hidden
+      .container.px-5.py-10.mx-auto
+        .mx-auto.flex.flex-wrap
+          .w-full.mb-6(class='lg:w-1/2 lg:pr-10 lg:py-6')
+            h2.text-sm.title-font.text-gray-600.tracking-widest Tokoyami Towa
+            h1.text-white.text-3xl.title-font.font-medium.mb-1 &quot;Towa is really an angel&quot;
+            p.leading-relaxed
+              | Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam $indigojuiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.
+          img.w-auto.mx-auto.object-cover.object-center.rounded(alt='tenshi' class='lg:h-auto' src='./images/profile-large.png')
+    include templates/footer.pug
